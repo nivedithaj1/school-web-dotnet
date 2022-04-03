@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@using (Html.BeginForm("ProcessLogin","Login"))
+{
+    <div class="text-center">
+    <h1 class="display-4">Login Page</h1>
+
+    <label for="pwd">Username:</label>
+<input type="text" id="pwd" name="username">
+
+    <label for="pwd">Password:</label>
+<input type="password" id="pwd" name="password">
+
+<button type="submit">
+    Submit
+</button>
+
+
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+    
+}
+
