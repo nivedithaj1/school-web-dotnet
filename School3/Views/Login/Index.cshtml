@@ -1,25 +1,32 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@model LoginPageErrorModel;
+@{ ViewData["Title"] = "Home Page"; }
 
-@using (Html.BeginForm("ProcessLogin","Login"))
+@using (Html.BeginForm())
 {
-    <div class="text-center">
+<div class="text-center">
     <h1 class="display-4">Login Page</h1>
+    <div>
+        <label for="pwd">Username:</label>
+        <input type="text" id="pwd" name="username">
+    </div>
+    <div>
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" name="password">
+    </div>
+    @if (Model!=null)
+    {
+        <div class="alert alert-danger" role="alert">
+            @Model.ErrorMessage
+        </div>
+    }
 
-    <label for="pwd">Username:</label>
-<input type="text" id="pwd" name="username">
-
-    <label for="pwd">Password:</label>
-<input type="password" id="pwd" name="password">
-
-<button type="submit">
-    Submit
-</button>
+    <div>
+        <button type="submit" class="btn btn-primary">
+            Submit
+        </button>
+    </div>
 
 
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
-    
-}
+</div>}
 

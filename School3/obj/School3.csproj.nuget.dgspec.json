@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\.net\\school\\School3\\School3\\School3.csproj": {}
+    "D:\\Experiments\\niv\\school-web-dotnet\\School3\\School3.csproj": {}
   },
   "projects": {
-    "D:\\.net\\school\\School3\\School3\\School3.csproj": {
+    "D:\\Experiments\\niv\\school-web-dotnet\\School3\\School3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\.net\\school\\School3\\School3\\School3.csproj",
+        "projectUniqueName": "D:\\Experiments\\niv\\school-web-dotnet\\School3\\School3.csproj",
         "projectName": "School3",
-        "projectPath": "D:\\.net\\school\\School3\\School3\\School3.csproj",
-        "packagesPath": "C:\\Users\\NivedithaJ\\.nuget\\packages\\",
-        "outputPath": "D:\\.net\\school\\School3\\School3\\obj\\",
+        "projectPath": "D:\\Experiments\\niv\\school-web-dotnet\\School3\\School3.csproj",
+        "packagesPath": "C:\\Users\\RejathRaj\\.nuget\\packages\\",
+        "outputPath": "D:\\Experiments\\niv\\school-web-dotnet\\School3\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\NivedithaJ\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\RejathRaj\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +25,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\RejathRaj\\Downloads": {},
+          "D:\\projects\\Idramp\\SAML lib\\SAML for .NET Core\\Bin": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,6 +44,22 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.15, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -49,12 +70,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[5.0.13, 5.0.13]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -63,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
         }
       }
     }
